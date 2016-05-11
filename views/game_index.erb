@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> LET'S PLAY! </title>
+  </head>
+  <body>
+    <ul>
+      <% @movie_list.movies each do |movie| %>
+        <li>
+          <%= movie.title %>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
