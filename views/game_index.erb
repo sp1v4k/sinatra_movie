@@ -4,12 +4,12 @@
     <title> LET'S PLAY! </title>
   </head>
   <body>
-    <ul>
-      <% @movie_list.movies each do |movie| %>
-        <li>
-          <%= movie.title %>
-        </li>
+    <div>
+      <% @poster_list.posters.each do |poster| %>
+        <div>
+          <img src="<%= poster %>" alt="no_image" heigh="42" width="42" >
+        </div>
       <% end %>
-    </ul>
+    </div>
   </body>
 </html>
